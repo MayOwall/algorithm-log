@@ -17,3 +17,4 @@
 3. [<b>`연속된 수의 합`</b>](https://mayowall.tistory.com/59) (🌟)<br/>
 4. [<b>`배열 두 배 만들기`</b>](https://mayowall.tistory.com/60) (🌟)<br/>
 5. <b>`배열 뒤집기`</b> (🌟)<br/>
+6. <b>`피자 나눠먹기(3)`</b> (🌟)<br/>
