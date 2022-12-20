@@ -12,10 +12,7 @@
 
 ### Programmers
 
-** 01. [나머지 구하기](https://mayowall.tistory.com/49) (🌟)**
-
-** 02. [양꼬치](https://mayowall.tistory.com/58)(🌟)**
-
-** 03. [연속된 수의 합](https://mayowall.tistory.com/59) (🌟)**
-
-** 04. [배열 두 배 만들기](https://mayowall.tistory.com/60) (🌟)**
+1. [<b>`나머지 구하기`</b>](https://mayowall.tistory.com/49) (🌟)<br/>
+2. [<b>`양꼬치`</b>](https://mayowall.tistory.com/58)(🌟)<br/>
+3. [<b>`연속된 수의 합`</b>](https://mayowall.tistory.com/59) (🌟)<br/>
+4. [<b>`배열 두 배 만들기`</b>](https://mayowall.tistory.com/60) (🌟)<br/>
