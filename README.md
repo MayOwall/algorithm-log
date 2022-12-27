@@ -10,7 +10,7 @@
 
 ## Javascript
 
-### Programmers (총 70문제)
+### Programmers (총 72문제)
 
 [<b>나머지 구하기</b>](https://mayowall.tistory.com/49) (🌟)<br/>
 [<b>양꼬치</b>](https://mayowall.tistory.com/58)(🌟)<br/>
@@ -85,4 +85,6 @@
 <b>직사각형 넓이 구하기</b> (🌟🌟)(+2)<br/>
 <b>문자열 밀기</b> (🌟🌟)(+4)<br/>
 <b>피자 나눠먹기</b> (🌟🌟)<br/>
+<b>치킨 쿠폰</b> (🌟🌟)(+3)<br/>
+<b>유한 소수 판별하기</b> (🌟🌟)(+6)<br/>
 </details>
