@@ -10,7 +10,7 @@
 
 ## Javascript
 
-### Programmers (총 76문제)
+### Programmers (총 77문제)
 
 [<b>나머지 구하기</b>](https://mayowall.tistory.com/49) (🌟)<br/>
 [<b>양꼬치</b>](https://mayowall.tistory.com/58)(🌟)<br/>
@@ -92,4 +92,5 @@
 <b>등수 매기기</b> (🌟🌟)(+2)<br/>
 <b>다항식 더하기</b> (🌟🌟🌟)(+9)<br/>
 <b>OX 퀴즈</b> (🌟🌟🌟)<br/>
+<b>팩토리얼</b> (🌟🌟)<br/>
 </details>
