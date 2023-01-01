@@ -10,7 +10,7 @@
 
 ## Javascript
 
-### Programmers (총 81문제)
+### Programmers (총 82문제)
 
 [<b>나머지 구하기</b>](https://mayowall.tistory.com/49) (🌟)<br/>
 [<b>양꼬치</b>](https://mayowall.tistory.com/58)(🌟)<br/>
@@ -96,4 +96,5 @@
 <b>A로 B 만들기</b> (🌟)<br/>
 <b>구슬을 나누는 경우의 수</b> (🌟🌟) (+3)<br/>
 <b>짝수와 홀수</b> (🌟)<br/>
+<b>평균 구하기</b> (🌟)<br/>
 </details>
