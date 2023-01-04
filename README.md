@@ -10,7 +10,7 @@
 
 ## Javascript
 
-### Programmers (총 85문제)
+### Programmers (총 86문제)
 
 [<b>나머지 구하기</b>](https://mayowall.tistory.com/49) (🌟)<br/>
 [<b>양꼬치</b>](https://mayowall.tistory.com/58)(🌟)<br/>
@@ -100,4 +100,5 @@
 <b>약수의 합</b> (🌟)<br/>
 <b>자연수를 뒤집어 배열로 만들기</b> (🌟)<br/>
 <b>정수 제곱근 판별</b> (🌟)<br/>
+<b>문자열 내 p와 y의 개수</b> (🌟)<br/>
 </details>
