@@ -10,7 +10,7 @@
 
 ## Javascript
 
-### Programmers (총 88문제)
+### Programmers (총 100문제)
 
 [<b>나머지 구하기</b>](https://mayowall.tistory.com/49) (🌟)<br/>
 [<b>양꼬치</b>](https://mayowall.tistory.com/58)(🌟)<br/>
@@ -113,4 +113,6 @@
 <b>나누어 떨어지는 숫자 배열</b> (🌟)<br/>
 <b>제일 작은 수 제거하기</b> (🌟)<br/>
 <b>음양 더하기</b> (🌟)<br/>
+<b>없는 숫자 더하기</b> (🌟)<br/>
+<b>가운데 글자 가져오기</b> (🌟)<br/>
 </details>
