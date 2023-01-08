@@ -10,7 +10,7 @@
 
 ## Javascript
 
-### Programmers (총 103문제)
+### Programmers (총 105문제)
 
 [<b>나머지 구하기</b>](https://mayowall.tistory.com/49) (🌟)<br/>
 [<b>양꼬치</b>](https://mayowall.tistory.com/58)(🌟)<br/>
@@ -118,4 +118,6 @@
 <b>수박수박수박수박수?</b> (🌟)<br/>
 <b>내적</b> (🌟)<br/>
 <b>문자열 내림차순으로 배치하기</b> (🌟)<br/>
+<b>문자열 다루기 기본</b> (🌟)<br/>
+<b>부족한 금액 계산하기</b> (🌟)<br/>
 </details>
