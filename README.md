@@ -12,14 +12,13 @@
 
 ### KAKAO (총 1문제)
 
-#### 2018 KAKAO BLIND RECRUITMENT
+#### `2018 KAKAO BLIND RECRUITMENT`
 
 <b>[1차] 비밀지도</b> (🌟)<br/>
 
 <br/>
-<br/>
 
-### Programmers (총 110문제)
+### Programmers (총 112문제)
 
 [<b>나머지 구하기</b>](https://mayowall.tistory.com/49) (🌟)<br/>
 [<b>양꼬치</b>](https://mayowall.tistory.com/58)(🌟)<br/>
