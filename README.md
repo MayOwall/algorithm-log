@@ -10,7 +10,7 @@
 
 ## Javascript
 
-### KAKAO (총 2문제)
+### KAKAO (총 3문제)
 
 #### `2018 KAKAO BLIND RECRUITMENT`
 
@@ -20,9 +20,14 @@
 
 <b>숫자 문자열과 영단어</b> (🌟)<br/>
 
+#### `2021 KAKAO BLIND RECRUITMENT`
+
+<b>실패율</b> (🌟)<br/>
+
+<br/>
 <br/>
 
-### Programmers (총 119문제)
+### Programmers (총 123문제)
 
 [<b>나머지 구하기</b>](https://mayowall.tistory.com/49) (🌟)<br/>
 [<b>양꼬치</b>](https://mayowall.tistory.com/58)(🌟)<br/>
