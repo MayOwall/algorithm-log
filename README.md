@@ -28,7 +28,7 @@
 <br/>
 <br/>
 
-### Programmers (총 129문제)
+### Programmers (총 130문제)
 
 [<b>나머지 구하기</b>](https://mayowall.tistory.com/49) (🌟)<br/>
 [<b>양꼬치</b>](https://mayowall.tistory.com/58)(🌟)<br/>
@@ -162,4 +162,5 @@
 <b>체육복</b> (🌟)<br/>
 <b>과일 장수</b> (🌟)<br/>
 <b>완주하지 못한 선수</b> (🌟)<br/>
+<b>명예의 전당</b> (🌟)<br/>
 </details>
