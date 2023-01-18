@@ -10,7 +10,7 @@
 
 ## Javascript
 
-### KAKAO (총 6문제)
+### KAKAO (총 7문제)
 
 #### `2018 KAKAO BLIND RECRUITMENT`
 
@@ -32,6 +32,7 @@
 #### `2021 KAKAO BLIND RECRUITMENT`
 
 <b>실패율</b> (🌟)<br/>
+<b>신규 아이디 추천</b> (🌟)<br/>
 
 <br/>
 <br/>
