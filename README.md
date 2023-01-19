@@ -10,7 +10,7 @@
 
 ## Javascript
 
-### KAKAO (총 7문제)
+### KAKAO (총 10문제)
 
 #### `2018 KAKAO BLIND RECRUITMENT`
 
@@ -44,6 +44,10 @@
 #### `2022 KAKAO BLIND RECRUITMENT`
 
 <b>신고 결과 받기</b> (🌟)<br/>
+
+#### `2023 KAKAO BLIND RECRUITMENT`
+
+<b>개인 정보 수집 유효기간</b> (🌟)<br/>
 
 ### Programmers (총 134문제)
 
