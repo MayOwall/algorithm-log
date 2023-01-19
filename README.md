@@ -41,6 +41,10 @@
 <br/>
 <br/>
 
+#### `2022 KAKAO BLIND RECRUITMENT`
+
+<b>신고 결과 받기</b> (🌟)<br/>
+
 ### Programmers (총 134문제)
 
 [<b>유한 소수 판별하기</b>](https://velog.io/@mayowall/%EC%9C%A0%ED%95%9C%EC%86%8C%EC%88%98-%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0-6) (🌟)(+6)<br/>
