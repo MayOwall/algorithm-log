@@ -197,5 +197,6 @@
 <!-- lv 2 -->
 <details> 
   <summary><b>Lv.2</b></summary>
-  - <b>최댓값과 최솟값</b> (🌟🌟)<br/>
+  - <b>최댓값과 최솟값</b><br/>
+  - <b>JadenCase 문자열 만들기</b><br/>
 </details>
