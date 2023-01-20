@@ -49,7 +49,7 @@
 
 <b>개인 정보 수집 유효기간</b> (🌟)<br/>
 
-### Programmers (총 134문제)
+### Programmers (총 135문제)
 
 [<b>유한 소수 판별하기</b>](https://velog.io/@mayowall/%EC%9C%A0%ED%95%9C%EC%86%8C%EC%88%98-%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0-6) (🌟)(+6)<br/>
 [<b>등수 매기기</b>](https://velog.io/@mayowall/Programmers-%EB%93%B1%EC%88%98-%EB%A7%A4%EA%B8%B0%EA%B8%B0-2) (🌟)(+4)<br/>
@@ -189,4 +189,5 @@
 <b>완주하지 못한 선수</b> (🌟)<br/>
 <b>명예의 전당</b> (🌟)<br/>
 <b>문자열 나누기</b> (🌟)<br/>
+<b>안전지대</b> (🌟) (+2)<br/>
 </details>
