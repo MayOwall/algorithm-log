@@ -196,7 +196,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 4문제)</b></summary>
+  <summary><b>Lv.2 (총 5문제)</b></summary>
+  - <b>이진 변환 계속하기</b><br/>
   - <b>올바른 괄호</b><br/>
   - <b>최솟값 만들기</b><br/>
   - <b>JadenCase 문자열 만들기</b><br/>
