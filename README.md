@@ -49,7 +49,7 @@
 
 <b>개인 정보 수집 유효기간</b> (🌟)<br/>
 
-### Programmers (총 135문제)
+### Programmers
 
 [<b>유한 소수 판별하기</b>](https://velog.io/@mayowall/%EC%9C%A0%ED%95%9C%EC%86%8C%EC%88%98-%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0-6) (🌟)(+6)<br/>
 [<b>등수 매기기</b>](https://velog.io/@mayowall/Programmers-%EB%93%B1%EC%88%98-%EB%A7%A4%EA%B8%B0%EA%B8%B0-2) (🌟)(+4)<br/>
@@ -61,7 +61,7 @@
 
 <!-- lv 0-1 -->
 <details>
-  <summary><b>Lv.0-1</b></summary>
+  <summary><b>Lv.0-1  (총 135문제)/b></summary>
   - <b>겹치는 선분의 길이</b> (🌟) (+4)<br/>
   - <b>안전지대</b> (🌟) (+2)<br/>
   - <b>문자열 나누기</b> (🌟)<br/>
@@ -196,7 +196,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2</b></summary>
-  - <b>최댓값과 최솟값</b><br/>
+  <summary><b>Lv.2 (총 3문제)</b></summary>
+  - <b>최솟값 만들기</b><br/>
   - <b>JadenCase 문자열 만들기</b><br/>
+  - <b>최댓값과 최솟값</b><br/>
 </details>
