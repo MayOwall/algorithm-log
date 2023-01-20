@@ -59,8 +59,10 @@
 [<b>기사단원의 무기</b>](https://velog.io/@mayowall/Programmers-%EA%B8%B0%EC%82%AC%EB%8B%A8%EC%9B%90%EC%9D%98-%EB%AC%B4%EA%B8%B0-4) (🌟)(+4)<br/>
 [<b>옹알이 (2)</b>](https://velog.io/@mayowall/Programmers-%EC%98%B9%EC%95%8C%EC%9D%B4-2-4) (🌟)(+4)<br/>
 
+<!-- lv 0-1 -->
 <details>
-<summary>그 외...</summary>
+<summary>Lv.0-1</summary>
+<b>겹치는 선분의 길이</b> (🌟) (+4)<br/>
 <b>안전지대</b> (🌟) (+2)<br/>
 <b>문자열 나누기</b> (🌟)<br/>
 <b>명예의 전당</b> (🌟)<br/>
@@ -190,4 +192,11 @@
 <b>연속된 수의 합</b> (🌟)<br/>
 <b>양꼬치</b> (🌟)<br/>
 <b>나머지 구하기</b> (🌟)<br/>
+</details>
+<details>
+
+<!-- lv 2 -->
+<details> 
+  <summary>Lv.2</summary>
+  <b>최댓값과 최솟값</b> (🌟🌟)<br/>
 </details>
