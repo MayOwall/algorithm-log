@@ -61,7 +61,7 @@
 
 <!-- lv 0-1 -->
 <details>
-<summary>Lv.0-1</summary>
+<summary><b>Lv.0-1</b></summary>
 <b>겹치는 선분의 길이</b> (🌟) (+4)<br/>
 <b>안전지대</b> (🌟) (+2)<br/>
 <b>문자열 나누기</b> (🌟)<br/>
@@ -193,10 +193,9 @@
 <b>양꼬치</b> (🌟)<br/>
 <b>나머지 구하기</b> (🌟)<br/>
 </details>
-<details>
 
 <!-- lv 2 -->
 <details> 
-  <summary>Lv.2</summary>
+  <summary><b>Lv.2</b></summary>
   <b>최댓값과 최솟값</b> (🌟🌟)<br/>
 </details>
