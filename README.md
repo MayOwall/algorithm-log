@@ -12,42 +12,42 @@
 
 ### KAKAO (총 10문제)
 
-#### `2018 KAKAO BLIND RECRUITMENT`
+`2018 KAKAO BLIND RECRUITMENT`
 
 <b>[1차] 비밀지도</b> (🌟)<br/>
 <b>[1차] 다트 게임</b> (🌟)<br/>
 
-#### `2019 KAKAO 개발자 겨울 인턴십`
+`2019 KAKAO 개발자 겨울 인턴십`
 
 <b>크레인 인형뽑기 게임</b> (🌟)<br/>
 
-#### `2020 KAKAO 인턴십`
+`2020 KAKAO 인턴십`
 
 <b>키패드 누르기</b> (🌟)<br/>
 
-#### `2021 KAKAO 채용연계형 인턴십`
+`2021 KAKAO 채용연계형 인턴십`
 
 <b>숫자 문자열과 영단어</b> (🌟)<br/>
 
-#### `2021 KAKAO BLIND RECRUITMENT`
+`2021 KAKAO BLIND RECRUITMENT`
 
 <b>실패율</b> (🌟)<br/>
 <b>신규 아이디 추천</b> (🌟)<br/>
 
-#### `2022 KAKAO TECH INTERNSHIP`
+`2022 KAKAO TECH INTERNSHIP`
 
 <b>성격 유형 검사하기</b> (🌟)<br/>
 
-<br/>
-<br/>
-
-#### `2022 KAKAO BLIND RECRUITMENT`
+`2022 KAKAO BLIND RECRUITMENT`
 
 <b>신고 결과 받기</b> (🌟)<br/>
 
-#### `2023 KAKAO BLIND RECRUITMENT`
+`2023 KAKAO BLIND RECRUITMENT`
 
 <b>개인 정보 수집 유효기간</b> (🌟)<br/>
+
+<br/>
+<br/>
 
 ### Programmers
 
