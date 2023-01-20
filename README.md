@@ -196,7 +196,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 6문제)</b></summary>
+  <summary><b>Lv.2 (총 7문제)</b></summary>
+  - <b>파보나치 수</b><br/>
   - <b>숫자의 표현</b><br/>
   - <b>이진 변환 계속하기</b><br/>
   - <b>올바른 괄호</b><br/>
