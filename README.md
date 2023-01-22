@@ -196,7 +196,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 11문제)</b></summary>
+  <summary><b>Lv.2 (총 13문제)</b></summary>
+  - <b>N개의 최소공배수</b><br/>
   - <b>구명보트</b><br/>
   - <b>영어 끝말잇기</b><br/>
   - <b>카펫</b><br/>
