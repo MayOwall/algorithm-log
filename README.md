@@ -196,7 +196,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 8문제)</b></summary>
+  <summary><b>Lv.2 (총 10문제)</b></summary>
+  - <b>카펫</b><br/>
   - <b>짝지어 제거하기</b><br/>
   - <b>다음 큰  숫자</b><br/>
   - <b>파보나치 수</b><br/>
