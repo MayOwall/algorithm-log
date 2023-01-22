@@ -196,7 +196,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 10문제)</b></summary>
+  <summary><b>Lv.2 (총 11문제)</b></summary>
+  - <b>구명보트</b><br/>
   - <b>영어 끝말잇기</b><br/>
   - <b>카펫</b><br/>
   - <b>짝지어 제거하기</b><br/>
