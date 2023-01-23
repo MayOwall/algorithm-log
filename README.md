@@ -196,7 +196,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 14문제)</b></summary>
+  <summary><b>Lv.2 (총 15문제)</b></summary>
+  - <b>점프와 순간이동 (+2)</b><br/>
   - <b>예상 대진표</b><br/>
   - <b>N개의 최소공배수</b><br/>
   - <b>구명보트</b><br/>
