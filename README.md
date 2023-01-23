@@ -196,7 +196,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 13문제)</b></summary>
+  <summary><b>Lv.2 (총 14문제)</b></summary>
+  - <b>예상 대진표</b><br/>
   - <b>N개의 최소공배수</b><br/>
   - <b>구명보트</b><br/>
   - <b>영어 끝말잇기</b><br/>
