@@ -196,7 +196,9 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 16문제)</b></summary>
+  <summary><b>Lv.2 (총 18문제)</b></summary>
+  - <b>H-index (+4)</b><br/>
+  - <b>프린터 실습</b><br/>
   - <b>멀리 뛰기 (+6)</b><br/>
   - <b>점프와 순간이동 (+2)</b><br/>
   - <b>예상 대진표</b><br/>
