@@ -1,25 +1,52 @@
-const solution = (p, location) => {
-  const l = p.length;
-  let f = 0;
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+
+class Queue {
+  constructor() {
+    this.head = null;
+    this.rear = null;
+  }
+  enqueue(newValue) {
+    const newNode = new Node(newValue);
+    if (this.head === null) {
+      this.head = this.tail = newNode;
+    } else {
+      this.tail.next = newNode;
+      this.tail = newNode;
+    }
+  }
+
+  dequeue() {
+    const value = this.head.value;
+    this.head = this.head.next;
+    return value;
+  }
+
+  peek() {
+    return this.head.value;
+  }
+}
+
+const solution = (priorities, location) => {
   let count = 0;
+  const queue = new Queue();
+  for (let i = 0; i < priorities.length; i++) {
+    queue.enqueue([priorities[i], i]);
+  }
+  priorities.sort((a, b) => b - a);
 
   while (true) {
-    const max = Math.max(...p.slice(f));
-    if (p[f] !== max) {
-      if (f === location) {
-        location += l;
-      }
-      p.push(p[f]);
-      delete p[f];
-      f += 1;
+    const currentValue = queue.peek();
+    if (currentValue[0] < priorities[count]) {
+      queue.enqueue(queue.dequeue());
     } else {
+      const value = queue.dequeue();
       count += 1;
-      if (f === location) {
-        return count;
-      } else {
-        delete p[f];
-        f += 1;
-      }
+      if (value[1] === location) return count;
     }
   }
 };
