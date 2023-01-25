@@ -197,7 +197,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 18문제)</b></summary>
+  <summary><b>Lv.2 (총 19문제)</b></summary>
+  - <b>행렬의 곱셈 (+3)</b><br/>
   - <b>H-index (+4)</b><br/>
   - <b>프린터 실습</b><br/>
   - <b>멀리 뛰기 (+6)</b><br/>
