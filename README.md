@@ -61,6 +61,13 @@
 [<b>기사단원의 무기</b>](https://velog.io/@mayowall/Programmers-%EA%B8%B0%EC%82%AC%EB%8B%A8%EC%9B%90%EC%9D%98-%EB%AC%B4%EA%B8%B0-4) (🌟)(+4)<br/>
 [<b>옹알이 (2)</b>](https://velog.io/@mayowall/Programmers-%EC%98%B9%EC%95%8C%EC%9D%B4-2-4) (🌟)(+4)<br/>
 
+<!-- lectures -->
+<details> 
+  <summary><b>Lectures (총 2문제)</b></summary>
+  - <b>해시 테이블 : 베스트앨범</b><br/>
+  - <b>프린터 실습</b><br/>
+</details>
+
 <!-- lv 0-1 -->
 <details>
   <summary><b>Lv.0-1  (총 135문제)</b></summary>
@@ -198,7 +205,7 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 23문제)</b></summary>
+  <summary><b>Lv.2 (총 22문제)</b></summary>
   - <b>프린터</b><br/>
   - <b>n^2 배열 자르기 (+3)</b><br/>
   - <b>기능개발</b><br/>
