@@ -6,7 +6,7 @@ const solution = (k, tangerine) => {
   let acc = 0;
   let answer = 0;
 
-  for (let i = 0; i < arr.length; i++) {
+  for (const i in arr) {
     acc += arr[i];
     answer += 1;
     if (acc >= k) return answer;
