@@ -207,7 +207,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 22문제)</b></summary>
+  <summary><b>Lv.2 (총 23문제)</b></summary>
+  - <b>귤 고르기</b><br/>
   - <b>프린터</b><br/>
   - <b>n^2 배열 자르기 (+3)</b><br/>
   - <b>기능개발</b><br/>
