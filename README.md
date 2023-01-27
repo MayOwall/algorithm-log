@@ -63,7 +63,8 @@
 
 <!-- lectures -->
 <details> 
-  <summary><b>Lectures (총 2문제)</b></summary>
+  <summary><b>Lectures (총 3문제)</b></summary>
+  - <b>힙 : 배상 비용 최소화</b><br/>
   - <b>해시 테이블 : 베스트앨범</b><br/>
   - <b>프린터 실습</b><br/>
 </details>
