@@ -207,7 +207,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 24문제)</b></summary>
+  <summary><b>Lv.2 (총 25문제)</b></summary>
+  - <b>k진수에서 소수 개수 구하기 (+4)</b><br/>
   - <b>타겟 넘버 (뿌듯 🤭)</b><br/>
   - <b>귤 고르기</b><br/>
   - <b>프린터</b><br/>
