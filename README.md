@@ -10,7 +10,7 @@
 
 ## Javascript
 
-### KAKAO (총 12문제)
+### KAKAO (총 13문제)
 
 `2018 KAKAO BLIND RECRUITMENT`
 
@@ -44,6 +44,7 @@
 `2022 KAKAO BLIND RECRUITMENT`
 
 <b>신고 결과 받기</b> (🌟)<br/>
+<b>k진수에서 소수 개수 구하기 (🌟🌟) (+4)</b><br/>
 
 `2023 KAKAO BLIND RECRUITMENT`
 
@@ -207,8 +208,7 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 25문제)</b></summary>
-  - <b>k진수에서 소수 개수 구하기 (+4)</b><br/>
+  <summary><b>Lv.2 (총 24문제)</b></summary>
   - <b>타겟 넘버 (뿌듯 🤭)</b><br/>
   - <b>귤 고르기</b><br/>
   - <b>프린터</b><br/>
