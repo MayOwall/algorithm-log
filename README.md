@@ -208,7 +208,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 24문제)</b></summary>
+  <summary><b>Lv.2 (총 25문제)</b></summary>
+  - <b>연속 부분 수열 합의 개수</b><br/>
   - <b>타겟 넘버 (뿌듯 🤭)</b><br/>
   - <b>귤 고르기</b><br/>
   - <b>프린터</b><br/>
