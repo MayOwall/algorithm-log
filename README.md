@@ -10,7 +10,7 @@
 
 ## Javascript
 
-### KAKAO (총 13문제)
+### KAKAO (총 16문제)
 
 `2018 KAKAO BLIND RECRUITMENT`
 
