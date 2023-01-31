@@ -72,7 +72,8 @@
 
 <!-- lectures -->
 <details> 
-  <summary><b>Lectures (총 4문제)</b></summary>
+  <summary><b>Lectures (총 5문제)</b></summary>
+  - <b>이진 탐색 : 입국심사</b><br/>
   - <b>트라이 : 자동완성</b><br/>
   - <b>힙 : 배상 비용 최소화</b><br/>
   - <b>해시 테이블 : 베스트앨범</b><br/>
