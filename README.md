@@ -10,7 +10,7 @@
 
 ## Javascript
 
-### KAKAO (총 16문제)
+### KAKAO (총 17문제)
 
 `2018 KAKAO BLIND RECRUITMENT`
 
@@ -19,6 +19,7 @@
 <b>[1차] 캐시</b> (🌟🌟)<br/>
 <b>[1차] 뉴스 클러팅</b> (🌟🌟)<br/>
 <b>[3차] 압축</b> (🌟🌟)<br/>
+<b>[3차] n진수게임</b> (🌟🌟)<br/>
 
 `2019 KAKAO BLIND RECRUITMENT`
 
