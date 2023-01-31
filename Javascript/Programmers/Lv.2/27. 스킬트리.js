@@ -1,5 +1,4 @@
 const solution = (skill, trees) => {
-  let answer = 0;
   const arr = [...skill];
   const arr2 = trees.map((v) =>
     v
