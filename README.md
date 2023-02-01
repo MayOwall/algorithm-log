@@ -218,7 +218,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 28문제)</b></summary>
+  <summary><b>Lv.2 (총 29문제)</b></summary>
+  - <b>방문길이 (+4)</b><br/>
   - <b>땅따먹기 (+3)</b><br/>
   - <b>스킬트리</b><br/>
   - <b>피로도</b><br/>
