@@ -1,54 +1,31 @@
 function solution(dirs) {
-  let current = [5, 5];
+  let cur = [5, 5];
   const arr = [];
+  const getLog = (a, b, c, d) => [`${a}${b}`, `${c}${d}`].sort().join("");
 
   for (const dir of dirs) {
     if (dir === "U") {
-      if (current[0] !== 0) {
-        const log = [
-          `${current[0]}${current[1]}`,
-          `${current[0] - 1}${current[1]}`,
-        ]
-          .sort()
-          .join("");
-        if (!arr.includes(log)) arr.push(log);
-        current[0] -= 1;
+      if (cur[0] !== 0) {
+        arr.push(getLog(cur[0], cur[1], cur[0] - 1, cur[1]));
+        cur[0] -= 1;
       }
     } else if (dir === "D") {
-      if (current[0] !== 10) {
-        const log = [
-          `${current[0]}${current[1]}`,
-          `${current[0] + 1}${current[1]}`,
-        ]
-          .sort()
-          .join("");
-        if (!arr.includes(log)) arr.push(log);
-        current[0] += 1;
+      if (cur[0] !== 10) {
+        arr.push(getLog(cur[0], cur[1], cur[0] + 1, cur[1]));
+        cur[0] += 1;
       }
     } else if (dir === "R") {
-      if (current[1] !== 10) {
-        const log = [
-          `${current[0]}${current[1]}`,
-          `${current[0]}${current[1] + 1}`,
-        ]
-          .sort()
-          .join("");
-        if (!arr.includes(log)) arr.push(log);
-        current[1] += 1;
+      if (cur[1] !== 10) {
+        arr.push(getLog(cur[0], cur[1], cur[0], cur[1] + 1));
+        cur[1] += 1;
       }
     } else if (dir === "L") {
-      if (current[1] !== 0) {
-        const log = [
-          `${current[0]}${current[1]}`,
-          `${current[0]}${current[1] - 1}`,
-        ]
-          .sort()
-          .join("");
-        if (!arr.includes(log)) arr.push(log);
-        current[1] -= 1;
+      if (cur[1] !== 0) {
+        arr.push(getLog(cur[0], cur[1], cur[0], cur[1] - 1));
+        cur[1] -= 1;
       }
     }
   }
 
-  return arr.length;
+  return new Set(arr).size;
 }
