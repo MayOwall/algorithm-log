@@ -253,3 +253,8 @@
   - <b>JadenCase 문자열 만들기</b><br/>
   - <b>최댓값과 최솟값</b><br/>
 </details>
+
+<details> 
+  <summary><b>Lv.3 (총 1문제)</b></summary>
+  - <b>이중우선순위큐</b><br/>
+</details>
