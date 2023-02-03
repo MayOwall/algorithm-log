@@ -255,6 +255,7 @@
 </details>
 
 <details> 
-  <summary><b>Lv.3 (총 1문제)</b></summary>
+  <summary><b>Lv.3 (총 2문제)</b></summary>
+  - <b>최고의 집합</b><br/>
   - <b>이중우선순위큐</b><br/>
 </details>
