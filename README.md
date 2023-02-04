@@ -64,6 +64,7 @@
 
 ### Programmers
 
+[<b>단어 변환 (처음으로 온전히 풀어낸 DFS!)</b>](https://velog.io/@mayowall/Programmers-Lv.-3-%EB%8B%A8%EC%96%B4-%EB%B3%80%ED%99%98)
 [<b>유한 소수 판별하기</b>](https://velog.io/@mayowall/%EC%9C%A0%ED%95%9C%EC%86%8C%EC%88%98-%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0-6) (🌟)(+6)<br/>
 [<b>등수 매기기</b>](https://velog.io/@mayowall/Programmers-%EB%93%B1%EC%88%98-%EB%A7%A4%EA%B8%B0%EA%B8%B0-2) (🌟)(+4)<br/>
 [<b>다항식 더하기</b>](https://velog.io/@mayowall/Programmers-%EB%8B%A4%ED%95%AD%EC%8B%9D-%EB%8D%94%ED%95%98%EA%B8%B0-9) (🌟)(+9)<br/>
@@ -255,7 +256,8 @@
 </details>
 
 <details> 
-  <summary><b>Lv.3 (총 4문제)</b></summary>
+  <summary><b>Lv.3 (총 5문제)</b></summary>
+  - <b>단어 변환 (처음으로 온전히 풀어낸 DFS!)</b><br/>
   - <b>야근 (+4)</b><br/>
   - <b>네트워크</b><br/>
   - <b>최고의 집합</b><br/>
