@@ -256,7 +256,8 @@
 </details>
 
 <details> 
-  <summary><b>Lv.3 (총 5문제)</b></summary>
+  <summary><b>Lv.3 (총 6문제)</b></summary>
+  - <b>베스트앨범</b><br/>
   - <b>단어 변환 (처음으로 온전히 풀어낸 DFS!)</b><br/>
   - <b>야근 (+4)</b><br/>
   - <b>네트워크</b><br/>
