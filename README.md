@@ -221,7 +221,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 30문제)</b></summary>
+  <summary><b>Lv.2 (총 31문제)</b></summary>
+  - <b>게임 맵 최단거리</b><br/>
   - <b>할인 행사 (+2)</b><br/>
   - <b>방문길이 (+4)</b><br/>
   - <b>땅따먹기 (+3)</b><br/>
