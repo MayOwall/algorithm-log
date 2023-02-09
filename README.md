@@ -257,8 +257,9 @@
 </details>
 
 <details> 
-  <summary><b>Lv.3 (총 7문제)</b></summary>
-  - <b>단속카메라 (+3+</b><br/>
+  <summary><b>Lv.3 (총 8문제)</b></summary>
+  - <b>숫자 게임 (+2)</b><br/>
+  - <b>단속카메라 (+3</b><br/>
   - <b>베스트앨범</b><br/>
   - <b>단어 변환 (처음으로 온전히 풀어낸 DFS!)</b><br/>
   - <b>야근 (+4)</b><br/>
