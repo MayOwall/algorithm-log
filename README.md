@@ -221,7 +221,8 @@
 
 <!-- lv 2 -->
 <details> 
-  <summary><b>Lv.2 (총 33문제)</b></summary>
+  <summary><b>Lv.2 (총 34문제)</b></summary>
+  - <b>2개 이하로 다른 비트 (+6)</b><br/>
   - <b>가장 큰 수</b><br/>
   - <b>게임 맵 최단거리</b><br/>
   - <b>할인 행사 (+2)</b><br/>
