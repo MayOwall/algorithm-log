@@ -64,15 +64,6 @@
 
 ### Programmers
 
-[<b>단어 변환 (처음으로 온전히 풀어낸 DFS!)</b>](https://velog.io/@mayowall/Programmers-Lv.-3-%EB%8B%A8%EC%96%B4-%EB%B3%80%ED%99%98)
-[<b>유한 소수 판별하기</b>](https://velog.io/@mayowall/%EC%9C%A0%ED%95%9C%EC%86%8C%EC%88%98-%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0-6) (🌟)(+6)<br/>
-[<b>등수 매기기</b>](https://velog.io/@mayowall/Programmers-%EB%93%B1%EC%88%98-%EB%A7%A4%EA%B8%B0%EA%B8%B0-2) (🌟)(+4)<br/>
-[<b>다항식 더하기</b>](https://velog.io/@mayowall/Programmers-%EB%8B%A4%ED%95%AD%EC%8B%9D-%EB%8D%94%ED%95%98%EA%B8%B0-9) (🌟)(+9)<br/>
-[<b>가까운 수</b>](https://velog.io/@mayowall/Programmers-%EA%B0%80%EA%B9%8C%EC%9A%B4-%EC%88%98-4%EC%A0%90) (🌟)(+4)<br/>
-[<b>구슬을 나누는 경우의 수</b>](https://velog.io/@mayowall/Programmers-%EA%B5%AC%EC%8A%AC%EC%9D%84-%EB%82%98%EB%88%84%EB%8A%94-%EA%B2%BD%EC%9A%B0%EC%9D%98-%EC%88%98) (🌟)(+3)<br/>
-[<b>기사단원의 무기</b>](https://velog.io/@mayowall/Programmers-%EA%B8%B0%EC%82%AC%EB%8B%A8%EC%9B%90%EC%9D%98-%EB%AC%B4%EA%B8%B0-4) (🌟)(+4)<br/>
-[<b>옹알이 (2)</b>](https://velog.io/@mayowall/Programmers-%EC%98%B9%EC%95%8C%EC%9D%B4-2-4) (🌟)(+4)<br/>
-
 <!-- lectures -->
 <details> 
   <summary><b>Lectures (총 6문제)</b></summary>
