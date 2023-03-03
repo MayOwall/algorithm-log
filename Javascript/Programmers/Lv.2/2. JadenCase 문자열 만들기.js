@@ -8,3 +8,10 @@ const solution = (s) =>
         .join("")
     )
     .join(" ");
+
+// 2023.03.03
+const solution2 = (s) =>
+  s
+    .split(" ")
+    .map((v) => v.slice(0, 1).toUpperCase() + v.slice(1).toLowerCase())
+    .join(" ");
