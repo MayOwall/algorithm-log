@@ -13,7 +13,7 @@
 ### KAKAO (총 20문제)
 
 <detail>
-<summary><b>2018 KAKAO BLIND RECRUITMENT</b></summary>
+<summary><b>2018 KAKAO BLIND RECRUITMENT</summary>
 
 <b>[1차] 비밀지도</b> (🌟)<br/>
 <b>[1차] 다트 게임</b> (🌟)<br/>
@@ -263,4 +263,19 @@
   - <b>네트워크</b><br/>
   - <b>최고의 집합</b><br/>
   - <b>이중우선순위큐</b><br/>
+</details>
+
+### Baekjoon
+
+<details> 
+  <summary><b>입출력과 사칙연산</b></summary>
+  - 1) 2557.	Hello World<br/>
+  - 2) 1000. A+B<br/>
+  - 3) 1001.	A-B<br/>
+  - 4) 10998.	A×B<br/>
+  - 5) 1008.	A/B<br/>
+  - 6) 10869.	사칙연산<br/>
+  - 7) 10926.	??!<br/>
+  - 8) 18108.	1998년생인 내가 태국에서는 2541년생?!<br/>
+  - 9) 10430.	나머지<br/>
 </details>
