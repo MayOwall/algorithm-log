@@ -287,4 +287,5 @@
 <details> 
   <summary><b>조건문</b></summary>
   - 1) 1330.	두 수 비교하기<br/>
+  - 2) 9498.	시험 성적<br/>
 </details>
