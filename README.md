@@ -298,4 +298,5 @@
 <details> 
   <summary><b>반복문</b></summary>
   - 1) 2739.	구구단<br/>
+  - 2) 10950.	A+B-3<br/>
 </details>
