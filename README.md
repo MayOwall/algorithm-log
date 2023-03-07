@@ -296,4 +296,5 @@
 <details> 
   <summary><b>1차원 배열</b></summary>
   - 1) 10807.	개수 세기<br/>
+  - 1) 10871.	X보다 작은 수 <br/>
 </details>
