@@ -306,3 +306,8 @@
   - 9) 10811. 바구니 뒤집기<br/>
   - 10) 1546. 평균<br/>
 </details>
+
+<details>
+<summary>문자열</summary>
+  - 1) 11654.	아스키 코드<br/>
+</details>
