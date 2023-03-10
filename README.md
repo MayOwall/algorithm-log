@@ -310,4 +310,5 @@
 <details>
 <summary>문자열</summary>
   - 1) 11654.	아스키 코드<br/>
+  - 2) 2742.	단어 길이 재기<br/>
 </details>
