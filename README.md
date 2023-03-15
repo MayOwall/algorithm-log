@@ -321,3 +321,8 @@
   - 10) 5622. 다이얼<br/>
   - 11) 11728. 그대로 출력하기<br/>
 </details>
+
+<details>
+<summary>심화 1</summary>
+  - 1) 25083. 새싹<br/>
+</details>
