@@ -325,4 +325,5 @@
 <details>
 <summary>심화 1</summary>
   - 1) 25083. 새싹<br/>
+  - 2) 3003. 킹, 퀸, 룩, 비숍, 나이트, 폰<br/>
 </details>
