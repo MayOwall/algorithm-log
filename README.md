@@ -6,8 +6,6 @@
 
 알고리즘 풀이 기록
 
-<br/>
-
 ## Javascript
 
 ### KAKAO (총 20문제)
