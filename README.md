@@ -336,4 +336,5 @@
 <details>
 <summary>	2차원 배열</summary>
   - 1) 2738. 행렬 덧셈<br/>
+  - 2) 2566. 최댓값<br/>
 </details>
