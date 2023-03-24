@@ -344,4 +344,5 @@
 <details>
   <summary>약수, 배수와 소수</summary>
   - 1) 5086. 배수와 약수<br/>
+  - 2) 2501. 약수 구하기<br/>
 </details>
