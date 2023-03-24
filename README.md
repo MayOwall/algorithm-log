@@ -340,3 +340,8 @@
   - 3) 10798. 세로 읽기<br/>
   - 4) 2563. 색종이<br/>
 </details>
+
+<details>
+  <summary>약수, 배수와 소수</summary>
+  - 1) 5086. 배수와 약수<br/>
+</details>
