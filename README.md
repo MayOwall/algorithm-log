@@ -350,3 +350,8 @@
   - 5) 2581. 소수<br/>
   - 6) 11653. 소인수분해<br/>
 </details>
+
+<details>
+<summary>기하: 직사각형과 삼각형</summary>
+  - 1) 27323. 직사각형<br/>
+</details>
