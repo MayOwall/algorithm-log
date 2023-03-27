@@ -352,7 +352,7 @@
 </details>
 
 <details>
-<summary>기하: 직사각형과 삼각형</summary>
+  <summary>기하: 직사각형과 삼각형</summary>
   - 1) 27323. 직사각형<br/>
   - 2) 1085. 직사각형에서 탈!출!<br/>
   - 3) 3009. 네번째 점<br/>
@@ -364,6 +364,6 @@
 </details>
 
 <details>
-<summary>시간 복잡도</summary>
+  <summary>시간 복잡도</summary>
   - 1) 24262. 알고리즘 수업 - 알고리즘의 수행 시간 1<br/>
 </details>
