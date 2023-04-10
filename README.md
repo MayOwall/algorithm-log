@@ -381,5 +381,5 @@
 
 <details>
   <summary>정렬</summary>
-  - 1) 2750. 수 정렬하기
+  - 1) 2750. 수 정렬하기 
 </details>
