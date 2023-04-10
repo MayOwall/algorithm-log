@@ -50,3 +50,23 @@ const solution = (priorities, location) => {
     }
   }
 };
+
+// 2.
+const solution2 = (priorities, location) => {
+  let arr = priorities.map((v, i) => [v, i === location]);
+  let answer = 0;
+
+  outer: while (true) {
+    const cur = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i][0] > cur[0]) {
+        arr = arr.slice(1);
+        arr.push(cur);
+        continue outer;
+      }
+    }
+    if (cur[1]) return answer + 1;
+    arr = arr.slice(1);
+    answer += 1;
+  }
+};
