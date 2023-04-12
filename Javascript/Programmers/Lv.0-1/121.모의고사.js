@@ -53,3 +53,22 @@ function solution(answers) {
     return winnerArr;
 }
 */
+
+const students = [
+  [1, 2, 3, 4, 5],
+  [2, 1, 2, 3, 2, 4, 2, 5],
+  [3, 3, 1, 1, 2, 2, 4, 4, 5, 5],
+];
+
+const solution2 = (answers) => {
+  let sum = [0, 0, 0];
+  let answer = [];
+  answers.forEach((v, idx) => {
+    students.forEach((student, i) => {
+      const left = idx % student.length;
+      if (student[left] === v) sum[i] += 1;
+    });
+  });
+  sum.forEach((v, i) => v === Math.max(...sum) && answer.push(i + 1));
+  return answer;
+};
