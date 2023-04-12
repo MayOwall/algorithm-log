@@ -29,3 +29,14 @@ function solution(sizes) {
     
     return longestW * longestH;
 */
+
+const solution2 = (sizes) => {
+  let w = 0;
+  let h = 0;
+  sizes.forEach((v) => {
+    const [a, b] = v.sort((a, b) => a - b);
+    w = Math.max(a, w);
+    h = Math.max(b, h);
+  });
+  return w * h;
+};
