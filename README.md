@@ -375,11 +375,10 @@
 
 <details>
   <summary>부르트 포스</summary>
-  - 1) 2231. 분해합
+  - 1) 2231. 분해합 1
 </details>
 
 <details>
   <summary>정렬</summary>
   - 1) 2750. 수 정렬하기
 </details>
-
