@@ -381,4 +381,5 @@
 <details>
   <summary>정렬</summary>
   - 1) 2750. 수 정렬하기
+  - 2) 2501. 약수 구하기<br/>
 </details>
