@@ -1,0 +1,11 @@
+const solution = (_, m, sections) => {
+  let answer = 0;
+  let painted = 0;
+  for (let section of sections) {
+    if (painted < section) {
+      answer += 1;
+      painted = section + m - 1;
+    }
+  }
+  return answer;
+};
