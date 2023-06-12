@@ -1,135 +1,151 @@
 function MinHeap() {
-  this.heap = [];
+  // heap : 노드들을 담는 배열
+  this.heap = [null];
 
-  this.minValue = heap[0] || null;
-
-  this.size = () => {
-    return this.heap.length;
+  // getParentIdx(idx) : 부모 인덱스를 구하는 메서드
+  this.getParentIdx = (idx) => {
+    return Math.floor(idx / 2);
+  };
+  // getLeftChildIndex(idx) : 왼 자식 인덱스를 구하는 메서드
+  this.getLeftChildIdx = (idx) => {
+    return idx * 2;
   };
 
+  // getRightChildIndex(i) : 오른 자식 인덱스를 구하는 메서드
+  this.getRightChildIdx = (idx) => {
+    return idx * 2 + 1;
+  };
+  // swap(idx1, idx2) : 두 노드를 교환하는 메서드
   this.swap = (idx1, idx2) => {
     const temp = this.heap[idx2];
     this.heap[idx2] = this.heap[idx1];
     this.heap[idx1] = temp;
   };
 
-  this.add = (value) => {
-    this.heap.push(value);
-    this.bubbleUp();
-  };
-
-  this.poll = () => {
-    if (this.heap.length === 1) {
-      return this.heap.pop();
-    }
-    const value = this.heap[0];
-    this.heap[0] = this.heap.pop();
-    this.bubbleDown();
-    return value;
-  };
-
-  this.bubbleUp = () => {
-    let index = this.heap.length - 1;
-    let parentIdx = Math.floor((index - 1) / 2);
+  // hepifyUp() : 위 방향으로 부모, 자식 노드를 비교하는 메서드
+  this.heapifyUp = () => {
+    let curIdx = this.heap.length - 1;
     while (
-      this.heap[parentIdx] &&
-      this.heap[index][1] < this.heap[parentIdx][1]
+      curIdx !== 1 &&
+      this.heap[this.getParentIdx(curIdx)] > this.heap[curIdx]
     ) {
-      this.swap(index, parentIdx);
-      index = parentIdx;
-      parentIdx = Math.floor((index - 1) / 2);
+      this.swap(curIdx, this.getParentIdx(curIdx));
+      curIdx = this.getParentIdx(curIdx);
     }
   };
 
-  this.bubbleDown = () => {
-    let idx = 0;
-    let leftIdx = idx * 2 + 1;
-    let rightIdx = idx * 2 + 2;
+  // heapifyDown() : 아래 방향으로 부모, 자식 노드를 비교하는 메서드
+  this.heapifyDown = () => {
+    let curIdx = 1;
 
-    while (
-      (this.heap[leftIdx] && this.heap[leftIdx][1] < this.heap[idx][1]) ||
-      (this.heap[rightIdx] && this.heap[rightIdx][1] < this.heap[idx][1])
-    ) {
-      let smallerIdx = leftIdx;
+    while (this.heap[this.getLeftChildIdx(curIdx)] !== undefined) {
+      let smallestIdx = this.getLeftChildIdx(curIdx);
+      const rightIdx = this.getRightChildIdx(curIdx);
+
       if (
-        this.heap[rightIdx] &&
-        this.heap[rightIdx][1] < this.heap[smallerIdx][1]
+        this.heap[rightIdx] !== undefined &&
+        this.heap[rightIdx] < this.heap[smallestIdx]
       ) {
-        smallerIdx = rightIdx;
+        smallestIdx = rightIdx;
       }
 
-      this.swap(idx, smallerIdx);
-      idx = smallerIdx;
-      leftIdx = idx * 2 + 1;
-      rightIdx = idx * 2 + 2;
+      if (this.heap[smallestIdx] < this.heap[curIdx]) {
+        this.swap(curIdx, smallestIdx);
+        curIdx = smallestIdx;
+        continue;
+      }
+      break;
     }
+  };
+
+  // add(value) : heap에 새로운 값을 더하는 메서드
+  this.add = (value) => {
+    this.heap.push(value);
+    this.heapifyUp();
+  };
+
+  // poll() : heap에서 루트 값을 빼어 재정렬한 후, 루트 값을 리턴하는 메서드
+  this.poll = () => {
+    const root = this.heap[1];
+    this.heap[1] = this.heap.pop();
+    this.heapifyDown();
+    return root;
   };
 }
 
 function MaxHeap() {
-  this.heap = [];
+  // heap : 노드들을 담는 배열
+  this.heap = [null];
 
-  this.maxValue = heap[0] || null;
-
-  this.size = () => {
-    return this.heap.length;
+  // getParentIdx(idx) : 부모 인덱스를 구하는 메서드
+  this.getParentIdx = (idx) => {
+    return Math.floor(idx / 2);
   };
 
+  // getLeftChildIndex(idx) : 왼 자식 인덱스를 구하는 메서드
+  this.getLeftChildIdx = (idx) => {
+    return idx * 2;
+  };
+
+  // getRightChildIndex(i) : 오른 자식 인덱스를 구하는 메서드
+  this.getRightChildIdx = (idx) => {
+    return idx * 2 + 1;
+  };
+
+  // swap(idx1, idx2) : 두 노드를 교환하는 메서드
   this.swap = (idx1, idx2) => {
     const temp = this.heap[idx2];
     this.heap[idx2] = this.heap[idx1];
     this.heap[idx1] = temp;
   };
 
-  this.add = (value) => {
-    this.heap.push(value);
-    this.bubbleUp();
-  };
-
-  this.poll = () => {
-    if (this.heap.length === 1) {
-      return this.heap.pop();
-    }
-    const value = this.heap[0];
-    this.heap[0] = this.heap.pop();
-    this.bubbleDown();
-    return value;
-  };
-
-  this.bubbleUp = () => {
-    let index = this.heap.length - 1;
-    let parentIdx = Math.floor((index - 1) / 2);
+  // hepifyUp() : 위 방향으로 부모, 자식 노드를 비교하는 메서드
+  this.heapifyUp = () => {
+    let curIdx = this.heap.length - 1;
     while (
-      this.heap[parentIdx] &&
-      this.heap[index][1] > this.heap[parentIdx][1]
+      curIdx !== 1 &&
+      this.heap[this.getParentIdx(curIdx)] < this.heap[curIdx]
     ) {
-      this.swap(index, parentIdx);
-      index = parentIdx;
-      parentIdx = Math.floor((index - 1) / 2);
+      this.swap(curIdx, this.getParentIdx(curIdx));
+      curIdx = this.getParentIdx(curIdx);
     }
   };
 
-  this.bubbleDown = () => {
-    let idx = 0;
-    let leftIdx = idx * 2 + 1;
-    let rightIdx = idx * 2 + 2;
+  // heapifyDown() : 아래 방향으로 부모, 자식 노드를 비교하는 메서드
+  this.heapifyDown = () => {
+    let curIdx = 1;
 
-    while (
-      (this.heap[leftIdx] && this.heap[leftIdx][1] > this.heap[idx][1]) ||
-      (this.heap[rightIdx] && this.heap[rightIdx][1] > this.heap[idx][1])
-    ) {
-      let smallerIdx = leftIdx;
+    while (this.heap[this.getLeftChildIdx(curIdx)] !== undefined) {
+      let biggestIdx = this.getLeftChildIdx(curIdx);
+      const rightIdx = this.getRightChildIdx(curIdx);
+
       if (
-        this.heap[rightIdx] &&
-        this.heap[rightIdx][1] > this.heap[smallerIdx][1]
+        this.heap[rightIdx] !== undefined &&
+        this.heap[rightIdx] > this.heap[biggestIdx]
       ) {
-        smallerIdx = rightIdx;
+        biggestIdx = rightIdx;
       }
 
-      this.swap(idx, smallerIdx);
-      idx = smallerIdx;
-      leftIdx = idx * 2 + 1;
-      rightIdx = idx * 2 + 2;
+      if (this.heap[biggestIdx] > this.heap[curIdx]) {
+        this.swap(curIdx, biggestIdx);
+        curIdx = biggestIdx;
+        continue;
+      }
+      break;
     }
+  };
+
+  // add(value) : heap에 새로운 값을 더하는 메서드
+  this.add = (value) => {
+    this.heap.push(value);
+    this.heapifyUp();
+  };
+
+  // poll() : heap에서 루트 값을 빼어 재정렬한 후, 루트 값을 리턴하는 메서드
+  this.poll = () => {
+    const root = this.heap[1];
+    this.heap[1] = this.heap.pop();
+    this.heapifyDown();
+    return root;
   };
 }
