@@ -1,31 +1,41 @@
-function solution(dirs) {
-  let cur = [5, 5];
-  const arr = [];
-  const getLog = (a, b, c, d) => [`${a}${b}`, `${c}${d}`].sort().join("");
-
-  for (const dir of dirs) {
-    if (dir === "U") {
-      if (cur[0] !== 0) {
-        arr.push(getLog(cur[0], cur[1], cur[0] - 1, cur[1]));
-        cur[0] -= 1;
-      }
-    } else if (dir === "D") {
-      if (cur[0] !== 10) {
-        arr.push(getLog(cur[0], cur[1], cur[0] + 1, cur[1]));
-        cur[0] += 1;
-      }
-    } else if (dir === "R") {
-      if (cur[1] !== 10) {
-        arr.push(getLog(cur[0], cur[1], cur[0], cur[1] + 1));
-        cur[1] += 1;
-      }
-    } else if (dir === "L") {
-      if (cur[1] !== 0) {
-        arr.push(getLog(cur[0], cur[1], cur[0], cur[1] - 1));
-        cur[1] -= 1;
-      }
-    }
+const getNextIdx = (curIdx, dir) => {
+  const [c, r] = curIdx;
+  switch (dir) {
+    case "U":
+      return [c - 1, r];
+    case "D":
+      return [c + 1, r];
+    case "R":
+      return [c, r + 1];
+    case "L":
+      return [c, r - 1];
   }
+};
 
-  return new Set(arr).size;
-}
+const obj = { U: false, D: false, R: false, L: false };
+
+const solution = (dirs) => {
+  let answer = 0;
+  let idx = [5, 5];
+  const visit = [];
+  const map = Array.from({ length: 11 }, () =>
+    Array.from({ length: 11 }, () => 1)
+  );
+
+  dirs.split("").forEach((dir) => {
+    const nextIdx = getNextIdx(idx, dir);
+    const [c, r] = nextIdx;
+    if (!!map[c] && !!map[c][r]) {
+      if (
+        !visit.includes(`${idx}${nextIdx}`) &&
+        !visit.includes(`${nextIdx}${idx}`)
+      ) {
+        visit.push(`${idx}${nextIdx}`);
+        answer += 1;
+      }
+      idx = [c, r];
+    }
+  });
+
+  return answer;
+};
