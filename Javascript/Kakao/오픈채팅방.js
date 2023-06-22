@@ -1,20 +1,16 @@
-const solution = (record) => {
-  const info = {};
+const userInfo = {};
+
+const solution = (records) => {
   const stack = [];
-
-  record.forEach((v) => {
-    const [act, id, name] = v.split(" ");
-    if (!!name) info[id] = name;
+  records.forEach((record) => {
+    const [type, id, nick] = record.split(" ");
+    if (type !== "Leave") userInfo[id] = nick;
+    if (type !== "Change") stack.push([type, id]);
   });
 
-  record.forEach((v) => {
-    const [act, id, name] = v.split(" ");
-    if (act === "Enter") {
-      stack.push(`${info[id]}님이 들어왔습니다.`);
-    } else if (act === "Leave") {
-      stack.push(`${info[id]}님이 나갔습니다.`);
-    }
-  });
-
-  return stack;
+  const answer = stack.map(
+    ([type, id]) =>
+      `${userInfo[id]}님이 ${type === "Enter" ? "들어왔" : "나갔"}습니다.`
+  );
+  return answer;
 };
