@@ -1,38 +1,36 @@
-// 이미 입차되어 있던 차가 나오는 경우는 어떡하지
-const getTime = (time) => {
-  const [hour, min] = time.split(":");
-  return Number(hour) * 60 + Number(min);
+const carInfo = {};
+
+const getTime = (start, end) => {
+  const startTime = new Date(`1995-12-17T${start}:00`).getTime();
+  const endTime = new Date(`1995-12-17T${end}:00`).getTime();
+  return (endTime - startTime) / 60000;
 };
 
-const getSum = (info, car) => {
-  const arr = info[car];
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (i === arr.length - 1 && !(i % 2)) {
-      sum += getTime("23:59") - arr[i];
-    } else if (i % 2) {
-      sum += arr[i];
-    } else {
-      sum -= arr[i];
-    }
+const getTotalTime = (times) => {
+  let total = 0;
+  for (let i = 0; i < times.length; i += 2) {
+    total += getTime(times[i], times[i + 1] || "23:59");
   }
-  return sum;
+  return total;
 };
 
-const getFee = (sum, fees) => {
-  if (fees[0] >= sum) return fees[1];
-  return Math.ceil((sum - fees[0]) / fees[2]) * fees[3] + fees[1];
+const getFee = (totalTime, fees) => {
+  const [min, minFee, time, addFee] = fees;
+  if (totalTime <= min) return minFee;
+
+  return Math.ceil((totalTime - min) / time) * addFee + minFee;
 };
 
 const solution = (fees, records) => {
-  const info = {};
-  records.forEach((v) => {
-    const [time, num] = v.split(" ");
-    if (!info[num]) info[num] = [];
-    info[num].push(getTime(time));
+  records.forEach((record) => {
+    const [time, carNum, type] = record.split(" ");
+    if (!carInfo[carNum]) carInfo[carNum] = [];
+    carInfo[carNum].push(time);
   });
 
-  const arr = Object.keys(info).sort((a, b) => Number(a) - Number(b));
-  const answer = arr.map((car) => getFee(getSum(info, car), fees));
+  const carNums = Object.keys(carInfo).sort((a, b) => a * 1 - b * 1);
+  const answer = carNums
+    .map((carNum) => getTotalTime(carInfo[carNum]))
+    .map((totalTime) => getFee(totalTime, fees));
   return answer;
 };
