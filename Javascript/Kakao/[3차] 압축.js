@@ -1,53 +1,24 @@
-const dic = [
-  null,
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "H",
-  "I",
-  "J",
-  "K",
-  "L",
-  "M",
-  "N",
-  "O",
-  "P",
-  "Q",
-  "R",
-  "S",
-  "T",
-  "U",
-  "V",
-  "W",
-  "X",
-  "Y",
-  "Z",
-];
+const dic = Array.from({ length: 26 }, (_, i) => String.fromCharCode(i + 65));
 
 const solution = (msg) => {
-  let stack = [];
   const answer = [];
+  let stack = "";
 
   for (let i = 0; i < msg.length; i++) {
-    stack.push(msg[i]);
-    const w = stack.join("");
-
-    if (!dic.includes(w)) {
-      const newWord = w;
-      stack.pop();
-      const printWord = stack.join("");
-      const idx = dic.indexOf(printWord);
-      answer.push(idx);
-      dic.push(newWord);
-      stack = [];
-      i--;
+    while (dic.includes(stack + msg[i])) {
+      stack += msg[i];
+      i++;
     }
+
+    const idx = dic.indexOf(stack) + 1;
+    answer.push(idx);
+    dic.push(stack + msg[i]);
+    stack = msg[i];
   }
-  answer.push(dic.indexOf(stack.join("")));
+
+  if (!!stack) {
+    answer.push(dic.indexOf(stack) + 1);
+  }
 
   return answer;
 };
