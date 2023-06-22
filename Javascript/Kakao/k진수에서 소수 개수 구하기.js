@@ -1,40 +1,38 @@
-const isPrime = (num) => {
-  for (let i = 2; i * i <= num; i++) {
-    if (!(num % i)) return false;
+const isPrime = (n) => {
+  if (n === 1) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (!(n % i)) return false;
   }
   return true;
 };
 
-const solution = (n, k) => {
-  const str = n.toString(k);
-  let arr = [];
-  let temp = "";
-  for (let i = 0; i < str.length + 1; i++) {
-    if (!Number(str[i])) {
-      !!temp ? arr.push([temp, i - temp.length, i - 1]) : null;
-      temp = "";
+const isRightNum = (stack) => {
+  const num = stack.join("") * 1;
+  return isPrime(num);
+};
+
+const getPrimeCount = (n) => {
+  let count = 0;
+  let stack = [];
+
+  for (let i = 0; i < n.length; i++) {
+    if (n[i] === "0") {
+      if (!stack.length) continue;
+      if (isRightNum(stack)) count += 1;
+      stack = [];
     } else {
-      temp += str[i];
+      stack.push(n[i]);
     }
   }
 
-  arr = arr.filter((v) => Number(v[0]) !== 1 && isPrime(v[0]));
+  if (!!stack.length && isRightNum(stack)) count += 1;
 
-  let answer = 0;
+  return count;
+};
 
-  for (num of arr) {
-    const left = str[num[1] - 1];
-    const right = str[num[2] + 1];
-    if (left === "0" && right === "0") {
-      answer += 1;
-    } else if (!left && right === "0") {
-      answer += 1;
-    } else if (left === "0" && !right) {
-      answer += 1;
-    } else if (!left && !right) {
-      answer += 1;
-    }
-  }
+const solution = (n, k) => {
+  n = n.toString(k);
 
+  const answer = getPrimeCount(n);
   return answer;
 };
