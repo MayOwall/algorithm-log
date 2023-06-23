@@ -6,24 +6,21 @@ const arrows = [
 ];
 
 const solution = (maps) => {
-  const C = maps.length - 1;
-  const R = maps[0].length - 1;
-  maps[0][0] = 0;
-  const queue = [[0, 0, 1]];
+  const queue = [[0, 0, 0]];
 
   while (!!queue.length) {
-    const [c, r, count] = queue.shift();
-    if (c === C && r === R) return count;
-
-    maps[c][r] = 0;
-    for (let arrow of arrows) {
-      const next = [c + arrow[0], r + arrow[1], count + 1];
-      if (!!maps[next[0]] && maps[next[0]][next[1]] === 1) {
-        maps[next[0]][next[1]] = 0;
-        queue.push(next);
-      }
+    const [c, r, cnt] = queue.shift();
+    if (c + 1 === maps.length && r + 1 === maps[0].length) {
+      return cnt + 1;
     }
-  }
 
+    arrows.forEach((arrow) => {
+      const [addC, addR] = arrow;
+      if (maps[c + addC] && maps[c + addC][r + addR] === 1) {
+        maps[c + addC][r + addR] = 0;
+        queue.push([c + addC, r + addR, cnt + 1]);
+      }
+    });
+  }
   return -1;
 };
