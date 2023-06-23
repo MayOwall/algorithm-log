@@ -1,20 +1,15 @@
-const al = ["A", "E", "I", "O", "U"];
+const words = ["A", "E", "I", "O", "U"];
 
 const solution = (word) => {
   const dic = [];
-
-  const bfs = (word) => {
-    dic.push(word);
-    if (word.length !== al.length) {
-      for (let i = 0; i < al.length; i++) {
-        bfs(word + al[i]);
-      }
-    }
+  const dfs = (sum) => {
+    if (sum.length === 5) return;
+    words.forEach((word) => {
+      dic.push(sum + word);
+      dfs(sum + word);
+    });
   };
 
-  for (let i = 0; i < al.length; i++) {
-    bfs(al[i]);
-  }
-
+  dfs("");
   return dic.indexOf(word) + 1;
 };
