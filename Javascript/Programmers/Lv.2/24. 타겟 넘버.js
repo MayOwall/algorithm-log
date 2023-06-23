@@ -1,15 +1,15 @@
 const solution = (numbers, target) => {
   let answer = 0;
 
-  const dfs = (arr, sum) => {
-    if (!arr.length) {
+  const dfs = (sum, i) => {
+    if (i === numbers.length) {
       if (sum === target) answer += 1;
       return;
     }
-    dfs(arr.slice(1), sum + arr[0]);
-    dfs(arr.slice(1), sum - arr[0]);
+    dfs(sum + numbers[i], i + 1);
+    dfs(sum - numbers[i], i + 1);
   };
 
-  dfs(numbers, 0);
+  dfs(0, 0);
   return answer;
 };
