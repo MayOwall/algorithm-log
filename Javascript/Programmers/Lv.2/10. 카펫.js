@@ -1,6 +1,6 @@
 const solution = (brown, yellow) => {
-  for (let h = 3; h <= brown / 2; h++) {
-    const w = brown / 2 - h + 2;
-    if (h * w === brown + yellow) return [w, h];
+  for (let c = 3; c <= brown - 3; c++) {
+    const r = brown / 2 - c + 2;
+    if ((c - 2) * (r - 2) === yellow) return [r, c];
   }
 };
