@@ -4,19 +4,16 @@ const solution = (n, computers) => {
 
   const dfs = (i) => {
     isVisit[i] = true;
-    computers[i].forEach((v, idx) => {
-      if (v === 1 && !isVisit[idx]) {
-        dfs(idx);
-      }
+    computers[i].forEach((isConnect, nextI) => {
+      if (isConnect === 1 && !isVisit[nextI]) dfs(nextI);
     });
   };
 
-  computers.forEach((_, i) => {
-    if (!isVisit[i]) {
-      dfs(i);
-      answer++;
-    }
+  computers.forEach((com, i) => {
+    if (isVisit[i]) return;
+    answer += 1;
+    dfs(i);
   });
 
-  console.log(answer);
+  return answer;
 };
