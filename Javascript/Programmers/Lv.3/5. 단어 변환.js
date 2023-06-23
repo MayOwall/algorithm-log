@@ -1,27 +1,24 @@
-const isSimilar = (a, b) =>
-  a.split("").filter((cur, idx) => b[idx] !== cur).length < 2;
+const isChangable = (word1, word2) => {
+  let cnt = 0;
+  for (let i = 0; i < word1.length; i++) {
+    if (word1[i] !== word2[i]) cnt += 1;
+    if (cnt === 2) return false;
+  }
+  return true;
+};
 
 const solution = (begin, target, words) => {
-  if (!words.includes(target)) return 0;
+  const queue = [[begin, 0, []]];
 
-  const answer = [];
-  const visit = new Array(words.length).fill(false);
+  while (!!queue.length) {
+    const [curWord, cnt, log] = queue.shift();
+    if (curWord === target) return cnt;
+    words.forEach((nextWord) => {
+      if (isChangable(curWord, nextWord) && !log.includes(nextWord)) {
+        queue.push([nextWord, cnt + 1, [...log, nextWord]]);
+      }
+    });
+  }
 
-  const dfs = (word, count) => {
-    if (visit[words.indexOf(word)]) return;
-    if (word === target) {
-      answer.push(count);
-      return;
-    }
-
-    count++;
-    visit[words.indexOf(word)] = true;
-
-    const nextWords = words.filter((v, i) => !visit[i] && isSimilar(v, word));
-    nextWords.forEach((v) => dfs(v, count));
-  };
-
-  dfs(begin, 0);
-
-  return Math.min(...answer);
+  return 0;
 };
