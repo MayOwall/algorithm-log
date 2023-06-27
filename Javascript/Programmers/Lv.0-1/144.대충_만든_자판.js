@@ -8,7 +8,6 @@ const getKeyHash = (keymap) => {
 
 const getKeyPress = (target, hashs) => {
   let press = 101;
-
   for (let i = 0; i < hashs.length; i++)
     press = Math.min(press, hashs[i][target] || 101);
 
