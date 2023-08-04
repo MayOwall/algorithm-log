@@ -7,7 +7,7 @@
 ### KAKAO ( 총 20문제 )
 
 <details>
-  <summary><b>2018 KAKAO BLIND RECRUITMENT</summary>
+<summary><b>2018 KAKAO BLIND RECRUITMENT</summary>
 <b>[1차] 비밀지도</b> (🌟)<br/>
 <b>[1차] 다트 게임</b> (🌟)<br/>
 <b>[1차] 캐시</b> (🌟🌟)<br/>
