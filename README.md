@@ -1,6 +1,6 @@
 # algorithm-log
 
-알고리즘 풀이기록
+> 백준, 프로그래머스 등의 알고리즘 문제 풀이 기록
 
 ## Javascript
 
