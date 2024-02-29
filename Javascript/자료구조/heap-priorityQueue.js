@@ -32,7 +32,6 @@ class MinHeap {
     const lastInsertedNode = this.heap[index];
 
     while (index > this.FIRST_INDEX) {
-      const curNode = this.heap[index];
       const parentIndex = this.getParentIndex(index);
       const parentNode = this.heap[parentIndex];
 
@@ -49,7 +48,6 @@ class MinHeap {
     const root = this.heap[index];
 
     while (this.getLeftChildIndex(index) < this.heap.length) {
-      const curNode = this.heap[index];
       const leftChildIndex = this.getLeftChildIndex(index);
       const leftChild = this.heap[leftChildIndex];
       const rightChildIndex = this.getRightChildIndex(index);
