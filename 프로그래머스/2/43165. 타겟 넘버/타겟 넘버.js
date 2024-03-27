@@ -1,16 +1,15 @@
-const solution = (numbers, target) => {
-    let result = 0;
+function solution(numbers, target) {
+    let answer = 0;
     
-    const dfs = (acc, nums) => {
-        if(!nums.length) {
-            if(acc === target) result += 1;
+    const search = (num, lefts) => {
+        if(!lefts.length) {
+            if(num === target) answer += 1;
             return;
-        }
-        const [num, ...nextNums] = nums;
-        dfs(acc + num, nextNums);
-        dfs(acc - num, nextNums);
+        };
+        search(num + lefts[0], lefts.slice(1));
+        search(num - lefts[0], lefts.slice(1));
     };
     
-    dfs(0, numbers)
-    return result;
+    search(0, numbers);
+    return answer;
 }
