@@ -1,24 +1,27 @@
-const arrows = [[0, 1], [1, 0], [0, -1], [-1, 0]];
-
-const solution = (maps) => {
-    const queue = [];
-    const target = [maps.length - 1, maps[0].length - 1];
-    queue.push([0, 0, 1]);
-    maps[0][0] = 0;
+function solution(maps) {
+    const m = maps.length - 1;
+    const n = maps[0].length - 1;
+    const moves = [[0, 1], [1, 0], [0, -1], [-1, 0]]; // 동, 남, 서, 북
+    let toVisit = [[0, 0, 1]];
     
-    while(!!queue.length) {
-        const cur = queue.shift();
-        const [c, r, cnt] = cur;
-        if(c === target[0] && r === target[1]) return cnt;
+    while(toVisit.length) {
+        const [col, row, count] = toVisit[0];
+        toVisit = toVisit.slice(1);
         
-        arrows.forEach((arrow) => {
-            const next = [c + arrow[0], r + arrow[1], cnt + 1];
-            if(!!maps[next[0]] && maps[next[0]][next[1]] === 1) {
-                maps[next[0]][next[1]] = 0;
-                queue.push(next);
+        if(col === m && row === n) {
+            return count;
+        }
+
+        for(let i = 0; i < moves.length; i++) {
+            const [y, x] = moves[i];
+            const nextCol = col + y;
+            const nextRow = row + x;
+            if(maps[nextCol] && maps[nextCol][nextRow]) {
+                maps[nextCol][nextRow] = 0;
+                toVisit.push([nextCol, nextRow, count + 1])
             }
-        });
-    }
+        };
+    };
     
     return -1;
 }
