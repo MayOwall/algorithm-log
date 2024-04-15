@@ -1,4 +1,9 @@
 function binarySearch(arr, target) {
+  // 배열의 길이가 없다면
+  if (!arr.length) {
+    return null;
+  }
+
   // 배열의 길이가 1이라면
   // 배열 첫번째의 값을 확인하고 리턴한다
   if (arr.length === 1) {
@@ -34,9 +39,11 @@ function binarySearch(arr, target) {
 const even = [1, 2, 3, 4, 5, 6];
 const odd = [1, 2, 3, 4, 5];
 
-console.log("result", binarySearch(even, 4));
-console.log("result", binarySearch(even, 1));
-console.log("result", binarySearch(even, 6));
-console.log("result", binarySearch(odd, 2));
-console.log("result", binarySearch(odd, 1));
-console.log("result", binarySearch(odd, 5));
+// console.log("result", binarySearch(even, 4));
+// console.log("result", binarySearch(even, 1));
+// console.log("result", binarySearch(even, 6));
+// console.log("result", binarySearch(odd, 2));
+// console.log("result", binarySearch(odd, 1));
+// console.log("result", binarySearch(odd, 5));
+console.log("result", binarySearch([3], 3));
+console.log("result", binarySearch([1, 1, 1], 1));

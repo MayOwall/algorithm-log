@@ -1,4 +1,7 @@
+/** target의 인덱스를 리턴하는 함수 */
 function binarySearch(arr, target) {
+  if (!arr.length) return -1;
+
   let left = 0;
   let right = arr.length;
 
@@ -8,37 +11,36 @@ function binarySearch(arr, target) {
 
     // mid가 목표한 값이면 해당 값을 리턴한다.
     if (mid === target) {
-      return mid;
+      return midIdx;
     }
 
     // mid가 목표한 값 보다 크다면
-    // right를 mid - 1 값으로 변경한다.
+    // right를 midIdx - 1 값으로 변경한다.
     // 반복한다.
     if (mid > target) {
-      right = mid - 1;
+      right = midIdx - 1;
       continue;
     }
 
     // mid가 목표한 값 보다 작다면
-    // left를 mid + 1 값으로 변경한다.
+    // left를 midIdx + 1 값으로 변경한다.
     // 반복한다.
     if (mid < target) {
-      left = mid + 1;
+      left = midIdx + 1;
     }
   }
 
   // 반복문을 통해 찾지 못한다면 값이 존재하지 않는다는 뜻이므로
-  // null을 리턴한다.
-  return null;
+  // -1을 리턴한다.
+  return -1;
 }
 
-const odd = [1, 2, 3, 4, 5];
-const even = [1, 2, 3, 4, 5, 6];
+// 랜덤한 target과 배열을 생성하여 테스트 실행
+const target = Math.floor(Math.random() * 100);
+const arr = Array.from({ length: 50 }, () =>
+  Math.floor(Math.random() * 100)
+).sort((a, b) => a - b);
 
-console.log("result", binarySearch(odd, 2));
-console.log("result", binarySearch(odd, 1));
-console.log("result", binarySearch(odd, 5));
+console.log(`Idx of ${target} : ${binarySearch(arr, target)}`);
 
-console.log("result", binarySearch(even, 4));
-console.log("result", binarySearch(even, 1));
-console.log("result", binarySearch(even, 6));
+console.log(binarySearch([], 1));
