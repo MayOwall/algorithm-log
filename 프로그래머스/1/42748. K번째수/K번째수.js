@@ -1,10 +1,9 @@
-const solution = (array, commands) => {
-    const answer = commands.map(cmd => getK(array, cmd));
-    return answer;
-}
-
-const getK = (arr, cmd) => {
-    const [start, end, idx] = cmd;
-    const K = arr.slice(start - 1, end).sort((a, b) => a - b)[idx - 1];
-    return K;
+function solution(array, commands) {
+    const getTarget = (cmd) => {
+        const [i, j, k] = cmd;
+        const targets = array.slice(i - 1, j).sort((a, b) => a - b);
+        return targets[k - 1];
+    };
+    
+    return commands.map(cmd => getTarget(cmd));
 }

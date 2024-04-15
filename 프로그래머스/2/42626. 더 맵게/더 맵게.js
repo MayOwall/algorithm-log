@@ -1,86 +1,79 @@
-class Heap {
+class MinQueue {
     constructor(){
-        this.heap = [null];
-        this.FIRST_INDEX = 1;
+        this.queue = [null];
     }
     
-    isExist = () => this.heap.length > this.FIRST_INDEX;
-    getMin = () => this.heap[this.FIRST_INDEX];
-    getParentIndex = (n) => Math.floor(n / 2);
-    getLeftChildIndex = (n) => n * 2;
-    getRightChildIndex = (n) => n * 2 + 1;
+    getParentIdx = (i) => Math.floor(i / 2);
+    getLeftIdx = (i) => i * 2;
+    getRightIdx = (i) => i * 2 + 1;
+    getMin = () => this.queue.length > 1 ? this.queue[1] : null;
+    getQueue = () => [...this.queue];
+    getCount = () => this.queue.length - 1;
     
-    insert = (value) => {
-        this.heap.push(value);
-        this.heapifyUp();
-    }
-    
-    remove = () => {
-        if(!this.isExist())  return null;
-        if(this.heap.length - 1 === this.FIRST_INDEX) {
-            return this.heap.pop();
-        }
-        
-        const root = this.heap[this.FIRST_INDEX];
-        this.heap[this.FIRST_INDEX] = this.heap.pop();
-        this.heapifyDown();
-        return root;
-    }
-    
-    heapifyUp = () => {
-        let index = this.heap.length - 1;
-        const lastInsertedNode = this.heap[index];
-        
-        while(index > this.FIRST_INDEX) {
-            const curNode = this.heap[index];
-            const parentIndex = this.getParentIndex(index);
-            const parentNode = this.heap[parentIndex];
+    up = () => {
+        let curIdx = this.queue.length - 1;
+        while(curIdx > 1) {
+            const parentIdx = this.getParentIdx(curIdx);
             
-            if(parentNode > lastInsertedNode) {
-                this.heap[index] = parentNode;
-                index = parentIndex;
-            } else break;
-        }
-        
-        this.heap[index] = lastInsertedNode;
-    }
-    heapifyDown = () => {
-        let index = this.FIRST_INDEX;
-        const root = this.heap[index];
-        
-        while(this.getLeftChildIndex(index) < this.heap.length) {
-            const curNode = this.heap[index];
-            const leftChildIndex = this.getLeftChildIndex(index);
-            const leftChild = this.heap[leftChildIndex];
-            const rightChildIndex = this.getRightChildIndex(index);
-            const rightChild = this.heap[rightChildIndex];
-            const smallerChildIndex = rightChild && leftChild > rightChild ? rightChildIndex : leftChildIndex;
-            const smallerChild = this.heap[smallerChildIndex];
-            if(smallerChild < root) {
-                this.heap[index] = smallerChild;
-                index = smallerChildIndex;
-            } else break;
-        }
-        
-        this.heap[index] = root;
-    }
-}
-
-const solution = (scoville, K) => {
-    const heap = new Heap();
-    scoville.forEach(v => heap.insert(v));
-    let count = 0;
-
-    while(heap.getMin() < K) {
-        count += 1;
-        const first = heap.remove();
-        const second = heap.remove();
-
-        if(!first || !second) return -1;
-        
-        const newFood = first + second * 2;
-        heap.insert(newFood);
+            const cur = this.queue[curIdx];
+            const parent = this.queue[parentIdx];
+            if(parent <= cur) break;
+            
+            this.queue[curIdx] = parent;
+            this.queue[parentIdx] = cur;
+            curIdx = parentIdx;
+        };
     };
     
-    return count;
+    down = () => {
+        let curIdx = 1;
+        while(this.getLeftIdx(curIdx) <= this.queue.length - 1) {
+            const leftIdx = this.getLeftIdx(curIdx);
+            const rightIdx = this.getRightIdx(curIdx);
+            const minIdx = !this.queue[rightIdx] ? leftIdx : this.queue[rightIdx] < this.queue[leftIdx] ? rightIdx : leftIdx;
+            const min = this.queue[minIdx];
+            const cur = this.queue[curIdx];
+            
+            if(cur <= min) break;
+            this.queue[curIdx] = min;
+            this.queue[minIdx] = cur;
+            curIdx = minIdx;
+        }
+    }
+    enQueue = (v) => {
+        this.queue.push(v);
+        this.up();
+    };
+    
+    deQueue = () => {
+        if(this.queue.length === 1) {
+            return null;
+        }
+        if(this.queue.length === 2) {
+            return this.queue.pop();
+        }
+        const min = this.getMin();
+        this.queue[1] = this.queue.pop();
+        this.down();
+        return min;
+    };
+    
+    
+}
+
+function solution(scoville, K) {
+    const q = new MinQueue();
+    scoville.forEach(v => q.enQueue(v));
+    let count = 0;
+    
+    while(q.getCount() >= 2) {
+        if(q.getMin() >= K) {
+            break;
+        }
+        const next = q.deQueue() + (q.deQueue() * 2);
+        q.enQueue(next);
+        count++;
+    }
+    
+    return q.getMin() >= K ? count : -1;
 }
