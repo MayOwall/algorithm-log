@@ -42,5 +42,3 @@ const arr = Array.from({ length: 50 }, () =>
 ).sort((a, b) => a - b);
 
 console.log(`Idx of ${target} : ${binarySearch(arr, target)}`);
-
-console.log(binarySearch([], 1));
