@@ -42,7 +42,8 @@ class MergeSort {
 
       if (cur1 === cur2) {
         result.push(cur1, cur2);
-        i = j += 1;
+        i += 1;
+        j += 1;
       }
       if (cur1 > cur2) {
         result.push(cur1);
@@ -70,7 +71,8 @@ class MergeSort {
 
       if (cur1 === cur2) {
         result.push(cur1, cur2);
-        i = j += 1;
+        i += 1;
+        j += 1;
       }
       if (cur1 < cur2) {
         result.push(cur1);
@@ -91,8 +93,9 @@ class MergeSort {
 
 // 임의의 20개의 배열 테스트
 const arr = Array.from({ length: 20 }, () => Math.floor(Math.random() * 100));
-console.log("desc", MergeSort.desc(arr));
-console.log("asce", MergeSort.asce(arr));
+console.log("origin", arr.length);
+console.log("desc", MergeSort.desc(arr).length);
+console.log("asce", MergeSort.asce(arr).length);
 
 // 빈 배열 테스트
 console.log("empty", MergeSort.desc([]));
