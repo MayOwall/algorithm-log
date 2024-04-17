@@ -1,9 +1,9 @@
 /** 분할 정복 (조건문 ver) */
 class MergeSort {
-  static desc = (arr) => this.#sort(arr, "desc");
-  static asce = (arr) => this.#sort(arr, "asce");
+  static desc = (arr) => this.#binaryTreeSort(arr, "desc");
+  static asce = (arr) => this.#binaryTreeSort(arr, "asce");
 
-  static #sort = (arr, type) => {
+  static #binaryTreeSort = (arr, type) => {
     // arr의 길이가 1이하 일 때의 예외 조건 필요
     if (arr.length < 2) {
       return arr;
@@ -76,6 +76,29 @@ class MergeSort {
     // 이진트리의 1번째 인덱스 배열을 리턴
     return binaryTree[1];
   };
+  static #twoStackSort = (arr, type) => {
+    if (arr.length < 2) {
+      return arr;
+    }
+
+    let stack = [...arr.map((v) => [v])];
+    let nextStack = [];
+
+    while (stack.length !== 1) {
+      while (stack.length >= 2) {
+        const left = stack.pop();
+        const right = stack.pop();
+        const mergeArr = this.#merge(left, right, type);
+        nextStack.push(mergeArr);
+      }
+
+      nextStack.push(...stack);
+      stack = nextStack;
+      nextStack = [];
+    }
+
+    return stack[0];
+  };
   static #merge = (arr1, arr2, type) => {
     const result = [];
     let i = 0;
@@ -88,6 +111,7 @@ class MergeSort {
         result.push(cur1, cur2);
         i += 1;
         j += 1;
+        continue;
       }
       if (
         (type === "asce" && cur1 > cur2) ||
@@ -107,9 +131,8 @@ class MergeSort {
 }
 
 const arr = Array.from({ length: 10 }, () => Math.floor(Math.random() * 100));
-
 console.log("origin", arr);
 console.log("desc", MergeSort.desc(arr));
 console.log("asce", MergeSort.asce(arr));
 
-console.log("empty", MergeSort.desc([]));
+// console.log("empty", MergeSort.desc([]));
