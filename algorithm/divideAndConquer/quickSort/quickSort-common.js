@@ -49,9 +49,7 @@ function partitioning(arr, low, high, pivot) {
   }
 }
 
-const arr = Array.from({ length: Math.floor(Math.random() * 7) }, () =>
-  Math.floor(Math.random() * 100)
-);
-console.log("before :", arr);
+const arr = Array.from({ length: 10 }, () => Math.floor(Math.random() * 100));
+console.log("before :", arr.join(","));
 quickSort(arr, 0, arr.length - 1);
-console.log("result", arr);
+console.log("result", arr.join(","));
