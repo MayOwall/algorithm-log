@@ -8,8 +8,8 @@ function quickSort(arr, low = 0, high = arr.length - 1) {
   swap(arr, low, pivot);
   pivot = partitioning(arr, low, high);
 
-  quickSort(arr, low, pivot - 1);
-  quickSort(arr, pivot + 1, high);
+  if (pivot - low >= 2) quickSort(arr, low, pivot - 1);
+  if (high - pivot >= 2) quickSort(arr, pivot + 1, high);
 }
 
 function getMedian(arr, low, high) {
@@ -62,19 +62,17 @@ function swap(arr, a, b) {
   arr[b] = temp;
 }
 
-/**
- * 테스트
+// /** 테스트
 const arr = Array.from({ length: Math.floor(Math.random() * 10) }, () =>
   Math.floor(Math.random() * 100)
 );
+const testArr = [...arr].sort((a, b) => a - b);
 console.log("🧪 QUICK-SORT");
 console.log("| INPUT       :", `[${arr.join(",")}]`);
-quickSort(arr, 0, arr.length - 1);
+quickSort(arr);
 console.log("| RETURN      :", `[${arr.join(",")}]`);
 console.log(
   "| TEST_RESULT :",
-  arr.sort((a, b) => a - b).join(",") === arr.join(",")
-    ? "✅ success"
-    : "❌ fail"
+  testArr.join(",") === arr.join(",") ? "✅ success" : "❌ fail"
 );
- */
+//  */
